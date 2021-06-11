@@ -1,4 +1,4 @@
-# biocmanuscript
+# largeScreen
 
 ## Project setup
 ```
