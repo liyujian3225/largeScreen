@@ -256,7 +256,7 @@ export default {
         cycleTime: this.cycleTime
       };
       this.$api.realTimeIntelligenceApi.getSincerity(params).then(response => {
-        response.data.result.result.eventEntPassP = response.data.result.result.eventEntPassP + '%';
+        // response.data.result.result.eventEntPassP = response.data.result.result.eventEntPassP + '%';
         this.attentionData[2].data = response.data.result.result;
       })
     },
@@ -266,7 +266,7 @@ export default {
         cycleTime: this.cycleTime
       };
       this.$api.realTimeIntelligenceApi.getBalance(params).then(response => {
-        response.data.result.result.eventEntPassP = response.data.result.result.eventEntPassP + '%';
+        // response.data.result.result.eventEntPassP = response.data.result.result.eventEntPassP + '%';
         this.attentionData[3].data = response.data.result.result;
       })
     },

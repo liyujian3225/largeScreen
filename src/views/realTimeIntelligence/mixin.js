@@ -12,6 +12,7 @@ export default {
               data: [
                 'ruleOlNum',
                 'ruleTrigNum',
+                'null',  //此处是为了美观，添加空格
               ]
             },
             {

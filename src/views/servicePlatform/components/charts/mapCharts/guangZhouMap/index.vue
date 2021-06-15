@@ -65,9 +65,6 @@ export default {
       guangZhouMapView.axis(false);
       guangZhouMapView.polygon()
         .position('longitude*latitude')
-        .label('name', {
-          offset: 0,
-        })
         .style({
           stroke: '#fff',
           lineWidth: 1,
@@ -87,13 +84,33 @@ export default {
           field: 'name',
           type: 'geo.region',
           as: [ 'longitude', 'latitude' ]
+        }).transform({
+          geoDataView: guangZhouMap,
+          field: 'name',
+          type: 'geo.centroid',
+          as: [ '_centroid_x', '_centroid_y' ]
         })
       userView.source(userDv);
       userView.axis(false);
-      const interval = userView.polygon()
+      userView.polygon()
         .position('longitude*latitude')
-        .color('value', '#3F6CA1-#113F7D')
         .tooltip('name*value')
+        .color('value', '#3F6CA1-#113F7D')
+        .label('name')
+        // .label('name*value', {
+        //   useHtml: true,
+        //   htmlTemplate: (text, item, index) => {
+        //     const { name, value } = item.point;
+        //     return `
+        //        <div class="itemName">
+        //           <span>${name}</span>
+        //        </div>
+        //        <div class="itemName">
+        //           <span>${value}</span>
+        //       </div>
+        //     `
+        //   }
+        // })
       chart.render();
     }
   }
@@ -102,6 +119,15 @@ export default {
 
 <style lang="scss">
   div#mapChart {
+    .itemName {
+      width: 40px;
+      line-height: 13px;
+      text-align: center;
+      span {
+        color: #fff;
+        font-size: 12px;
+      }
+    }
     .my-tooltip {
       width: 241px !important;
       height: 137px !important;

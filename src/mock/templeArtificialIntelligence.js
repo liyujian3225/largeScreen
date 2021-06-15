@@ -13,7 +13,8 @@ Mock.mock('/miaosuanIntelligence/knowledgeGraph', {
       "loginDevRalNum":122053,					//登录设备关系数量
       "legalRepRalNum":60094,						//法定代表人关系数量
       "sameTelRalNum":4751,						//相同电话号码关系数量
-      "proxyRalNum":5								//代理关系关系数量
+      "proxyRalNum":5,								//代理关系关系数量
+      "url": "http://10.1.2.64:9122/ss/#/"
     }
   }
 })
@@ -29,7 +30,8 @@ Mock.mock('/miaosuanIntelligence/machineLearning', {
       "cardNumDrawTran":51,	 				//卡号提取交易
       "custNumDrawTran":15,					//客户号提取交易
       "iPDrawTran":64,						//IP提取交易
-      "fingerprintDrawTran":56				//设备指纹提取交易
+      "fingerprintDrawTran":56,				//设备指纹提取交易
+      "url": "http://10.1.2.64:9122/ss/#/"
     }
   }
 })
@@ -42,6 +44,7 @@ Mock.mock('/miaosuanIntelligence/terminalSituation', {
       "equipEnvironAnalysis":45,					//设备环境分析
       "crashAnalysis":654,						//崩溃分析
       "equipOperaAnalysis":561,
+      "url": "http://10.1.2.64:9122/ss/#/"
     }
   }
 })
@@ -58,7 +61,8 @@ Mock.mock('/miaosuanIntelligence/biometrics', {
       "householdRegOCR":4,							//户口本OCR
       "propertyCerOCR":2,								//房产证OCR
       "vATBilOCR": 3,									//增值税票据OCR
-      "totalDailyTran":15665 						    //每日交易总数
+      "totalDailyTran":15665, 						    //每日交易总数
+      "url": "http://10.1.2.64:9122/ss/#/"
     }
   }
 })
@@ -69,7 +73,8 @@ Mock.mock('/miaosuanIntelligence/realtimeIntelligence', {
       "skyeyeAntiFraud":13924, 			  			//天眼实时反欺诈
       "printRiteAccMut":4821,							//天威账户监控
       "sincerityCreditDec":15665,						//天诚信贷决策
-      "balanceDec":15635								//天平决策
+      "balanceDec":15635,								//天平决策
+      "url": "http://10.1.2.64:9122/ss/#/"
     }
   }
 })

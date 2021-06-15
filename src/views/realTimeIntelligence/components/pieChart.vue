@@ -120,7 +120,7 @@ export default {
             value: (percent * 100).toFixed(2) + '%'
           }
         })
-        .color('item', ['#22A4F8', '#F95900', '#FFE400']).size(18)
+        .color('item', ['red', 'yellow', 'green']).size(18)
         .style({
           lineWidth: 1
         })

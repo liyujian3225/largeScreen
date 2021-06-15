@@ -73,13 +73,9 @@
         />
       </div>
       <div class="trendCharts">
-        <custom-title>业务近30天交易量走势图</custom-title>
-        <line-chart
-          :id="'accountId'"
-          :height="290"
-          :data-source="accountTrendData"
-          v-if='false && accountTrendData.length'
-        />
+        <custom-title>
+          业务近30天交易量走势图
+        </custom-title>
         <line-chart
           :id="'cardId'"
           :height="290"
@@ -124,7 +120,8 @@ export default {
       totalPercentage: [],
       percentage: [],
       openCardTrendData: [],
-      accountTrendData: []
+      accountTrendData: [],
+      t: null,
     };
   },
   methods: {
@@ -309,7 +306,7 @@ export default {
     }, 1000 * 60 * 10)
   },
   beforeDestroy () {
-    clearTimeout(this.t)
+    clearInterval(this.t);
   },
 };
 </script>

@@ -44,7 +44,7 @@ export default {
         container: document.getElementById(this.id),
         forceFit: true,
         height: this.height,
-        padding: [20, 60, 30, 40]
+        padding: [20, 20, 30, 50]
       });
       chart.source(dv, {
         time: {
@@ -58,7 +58,7 @@ export default {
           alias: '交易量',
         },
         percent: {
-          alias: '占比'
+          alias: '占比',
         }
       });
       chart.tooltip({
@@ -84,19 +84,24 @@ export default {
         label: {
           textStyle: {
             textAlign: 'end',
-            fill: '#17B0F6'
+            fill: '#17B0F6',
+            fontSize: 16
           },
           formatter: val => {
             return val;
           }
         },
-        grid: false
+        grid: false,
       });
       chart.axis('percent', {
         label: {
           textStyle: {
             textAlign: 'end',
-            fill: '#97EB86'
+            fill: '#97EB86',
+            fontSize: 16
+          },
+          formatter: val => {
+            return val + '%';
           }
         },
         grid: false

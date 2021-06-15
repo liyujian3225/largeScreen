@@ -29,7 +29,9 @@ export default {
     },
   },
   data () {
-    return {};
+    return {
+
+    };
   },
   mounted () {
     this.renderChart();
@@ -160,8 +162,8 @@ export default {
           }
         })
       chart.render();
-    }
-  }
+    },
+  },
 };
 </script>
 

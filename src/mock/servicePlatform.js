@@ -84,13 +84,24 @@ Mock.mock('/MobileIntelligenceController/Trend', {
   'result': {
     "result": {
       open: [
-        {"name":"开卡申请","country":"PAD","time":"20210427","value":62},
-        {"name":"开卡申请","country":"PAD","time":"20210428","value":65},
-        {"name":"开卡申请","country":"PAD","time":"20210429","value":29},
-        {"name":"开卡申请","country":"PAD","time":"20210430","value":94},
-        {"name":"开卡申请","country":"PAD","time":"20210501","value":12},
-        {"name":"开卡申请","country":"PAD","time":"20210502","value":3},
-        {"name":"开卡申请","country":"PAD","time":"20210503","value":82},{"name":"开卡申请","country":"PAD","time":"20210504","value":20},{"name":"开卡申请","country":"PAD","time":"20210505","value":65},{"name":"开卡申请","country":"PAD","time":"20210506","value":59},{"name":"开卡申请","country":"PAD","time":"20210507","value":53},{"name":"开卡申请","country":"PAD","time":"20210508","value":41},{"name":"开卡申请","country":"PAD","time":"20210509","value":55},{"name":"开卡申请","country":"PAD","time":"20210510","value":43},{"name":"开卡申请","country":"PAD","time":"20210511","value":58},{"name":"开卡申请","country":"PAD","time":"20210512","value":28},{"name":"开卡申请","country":"PAD","time":"20210513","value":55},{"name":"开卡申请","country":"PAD","time":"20210514","value":81},{"name":"开卡申请","country":"PAD","time":"20210515","value":73},{"name":"开卡申请","country":"PAD","time":"20210516","value":52},{"name":"开卡申请","country":"PAD","time":"20210517","value":89},{"name":"开卡申请","country":"PAD","time":"20210518","value":98},{"name":"开卡申请","country":"PAD","time":"20210519","value":72},{"name":"开卡申请","country":"PAD","time":"20210520","value":10},{"name":"开卡申请","country":"PAD","time":"20210521","value":87},{"name":"开卡申请","country":"PAD","time":"20210522","value":67},{"name":"开卡申请","country":"PAD","time":"20210523","value":70},{"name":"开卡申请","country":"PAD","time":"20210524","value":50},{"name":"开卡申请","country":"PAD","time":"20210525","value":74},{"name":"开卡申请","country":"PAD","time":"20210526","value":42},{"name":"开卡申请","country":"PAD","time":"20210527","value":13},{"name":"开卡申请","country":"CNT","time":"20210427","value":36},{"name":"开卡申请","country":"CNT","time":"20210428","value":94},{"name":"开卡申请","country":"CNT","time":"20210429","value":13},{"name":"开卡申请","country":"CNT","time":"20210430","value":34},{"name":"开卡申请","country":"CNT","time":"20210501","value":30},{"name":"开卡申请","country":"CNT","time":"20210502","value":76},{"name":"开卡申请","country":"CNT","time":"20210503","value":39},{"name":"开卡申请","country":"CNT","time":"20210504","value":74},{"name":"开卡申请","country":"CNT","time":"20210505","value":25},{"name":"开卡申请","country":"CNT","time":"20210506","value":26},{"name":"开卡申请","country":"CNT","time":"20210507","value":7},{"name":"开卡申请","country":"CNT","time":"20210508","value":9},{"name":"开卡申请","country":"CNT","time":"20210509","value":46},{"name":"开卡申请","country":"CNT","time":"20210510","value":10},{"name":"开卡申请","country":"CNT","time":"20210511","value":88},{"name":"开卡申请","country":"CNT","time":"20210512","value":91},{"name":"开卡申请","country":"CNT","time":"20210513","value":18},{"name":"开卡申请","country":"CNT","time":"20210514","value":64},{"name":"开卡申请","country":"CNT","time":"20210515","value":67},{"name":"开卡申请","country":"CNT","time":"20210516","value":14},{"name":"开卡申请","country":"CNT","time":"20210517","value":29},{"name":"开卡申请","country":"CNT","time":"20210518","value":26},{"name":"开卡申请","country":"CNT","time":"20210519","value":12},{"name":"开卡申请","country":"CNT","time":"20210520","value":67},{"name":"开卡申请","country":"CNT","time":"20210521","value":73},{"name":"开卡申请","country":"CNT","time":"20210522","value":51},{"name":"开卡申请","country":"CNT","time":"20210523","value":84},{"name":"开卡申请","country":"CNT","time":"20210524","value":46},{"name":"开卡申请","country":"CNT","time":"20210525","value":27},{"name":"开卡申请","country":"CNT","time":"20210526","value":79},{"name":"开卡申请","country":"CNT","time":"20210527","value":22}
+        {"name":"开卡申请","country":"PAD","time":"20210127","value":156},
+        {"name":"开卡申请","country":"PAD","time":"20210428","value":965},
+        {"name":"开卡申请","country":"PAD","time":"20210429","value":356},
+        {"name":"开卡申请","country":"PAD","time":"20210430","value":85},
+        {"name":"开卡申请","country":"PAD","time":"20210501","value":5},
+        {"name":"开卡申请","country":"PAD","time":"20210502","value":456},
+        {"name":"开卡申请","country":"PAD","time":"20210503","value":952},
+        {"name":"开卡申请","country":"PAD","time":"20210504","value":856},
+        {"name":"开卡申请","country":"PAD","time":"20210505","value":5},
+        {"name":"开卡申请","country":"PAD","time":"20210506","value":29},
+        {"name":"开卡申请","country":"PAD","time":"20210507","value":59},
+        {"name":"开卡申请","country":"PAD","time":"20210508","value":71},
+        {"name":"开卡申请","country":"PAD","time":"20210509","value":65},
+        {"name":"开卡申请","country":"PAD","time":"20210510","value":1},
+        {"name":"开卡申请","country":"PAD","time":"20210511","value":8},
+        {"name":"开卡申请","country":"PAD","time":"20210512","value":68},
+        {"name":"开卡申请","country":"PAD","time":"20210513","value":55},
+        {"name":"开卡申请","country":"PAD","time":"20210514","value":81},
       ],
       card: [
         {"name":"开户申请","country":"PAD","time":"20210427","value":69},
