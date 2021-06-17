@@ -248,6 +248,7 @@ export default {
               display: block;
               width: 397px;
               height: 361px;
+              margin-bottom: 20px;
               background: url("../../assets/templeArtificialIntelligence/knowledge.png");
               transition:all 0.2s linear;
               &:hover {
@@ -257,7 +258,10 @@ export default {
           }
           &:nth-child(2) {
             width: 332px;
-            height: 312px;
+            .content {
+              height: 130px;
+              margin-bottom: 30px;
+            }
             .img {
               cursor: pointer;
               display: block;
@@ -269,14 +273,13 @@ export default {
                 transform: scale(1.05);
               }
             }
-            .content {
-              height: 130px;
-              margin-bottom: 30px;
-            }
           }
           &:nth-child(3) {
             width: 294px;
-            height: 283px;
+            .content {
+              height: 80px;
+              margin-bottom: 35px;
+            }
             .img {
               cursor: pointer;
               display: block;
@@ -288,14 +291,14 @@ export default {
                 transform: scale(1.05);
               }
             }
-            .content {
-              height: 80px;
-              margin-bottom: 35px;
-            }
+
           }
           &:nth-child(4) {
             width: 332px;
-            height: 312px;
+            .content {
+              height: 130px;
+              margin-bottom: 30px;
+            }
             .img {
               cursor: pointer;
               display: block;
@@ -307,28 +310,24 @@ export default {
                 transform: scale(1.05);
               }
             }
-            .content {
-              height: 130px;
-              margin-bottom: 30px;
-            }
           }
           &:nth-child(5) {
             width: 397px;
-            height: 361px;
+            .content {
+              height: 180px;
+              margin-bottom: 55px;
+            }
             .img {
               cursor: pointer;
               display: block;
               width: 397px;
               height: 361px;
+              margin-bottom: 20px;
               background: url("../../assets/templeArtificialIntelligence/smart.png");
               transition:all 0.2s linear;
               &:hover {
                 transform: scale(1.05);
               }
-            }
-            .content {
-              height: 180px;
-              margin-bottom: 55px;
             }
           }
         }

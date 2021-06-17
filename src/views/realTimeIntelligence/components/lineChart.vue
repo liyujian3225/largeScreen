@@ -87,9 +87,6 @@ export default {
             fill: '#17B0F6',
             fontSize: 16
           },
-          formatter: val => {
-            return val;
-          }
         },
         grid: false,
       });
