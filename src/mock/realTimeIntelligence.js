@@ -21,47 +21,47 @@ Mock.mock('/intelligencePlatform/riskWarning?type=1&cycleTime=1', {
       {
         time: '2021-06-10T10:00:00.000+0000',
         cropNum: 500 ,
-        cropNumP: 28.34
+        cropNumP: 0.0
       },
       {
         time: '2021-06-10T11:00:00.000+0000',
         cropNum: 120 ,
-        cropNumP: 18.34
+        cropNumP: 0.0
       },
       {
         time: '2021-06-10T12:00:00.000+0000',
         cropNum: 80 ,
-        cropNumP: 8.34
+        cropNumP: 0.0
       },
       {
         time: '2021-06-10T13:00:00.000+0000',
         cropNum: 360 ,
-        cropNumP: 38.34
+        cropNumP: 0.0
       },
       {
         time: '2021-06-10T14:00:00.000+0000',
         cropNum: 177 ,
-        cropNumP: 10
+        cropNumP: 0.0
       },
       {
         time: '2021-06-10T15:00:00.000+0000',
         cropNum: 293 ,
-        cropNumP: 45
+        cropNumP: 0.0
       },
       {
         time: '2021-06-10T16:00:00.000+0000',
         cropNum: 456 ,
-        cropNumP: 86
+        cropNumP: 0.0
       },
       {
         time: '2021-06-10T17:00:00.000+0000',
         cropNum: 300 ,
-        cropNumP: 4
+        cropNumP: 0.0
       },
       {
         time: '2021-06-10T18:00:00.000+0000',
         cropNum: 500 ,
-        cropNumP: 2
+        cropNumP: 0.0
       },
     ]
   }
@@ -71,7 +71,7 @@ Mock.mock('/intelligencePlatform/riskControl?type=1&cycleTime=1', {
     "result": [
       {
         time: '2021-05-25 01:00:00',
-        cropNum: 10001 ,
+        cropNum: 1000000 ,
         cropNumP: 8.34
       },
       {
@@ -97,12 +97,12 @@ Mock.mock('/intelligencePlatform/riskControl?type=1&cycleTime=1', {
       {
         time: '2021-05-25 06:00:00',
         cropNum: 293 ,
-        cropNumP: 98.34
+        cropNumP: '98.34%'
       },
       {
         time: '2021-05-25 07:00:00',
         cropNum: 456 ,
-        cropNumP: 8.34
+        cropNumP: '8.34%'
       },
       {
         time: '2021-05-25 08:00:00',
@@ -112,7 +112,7 @@ Mock.mock('/intelligencePlatform/riskControl?type=1&cycleTime=1', {
       {
         time: '2021-05-25 09:00:00',
         cropNum: 500 ,
-        cropNumP: 68.34
+        cropNumP: '68.34%'
       },
     ]
   }

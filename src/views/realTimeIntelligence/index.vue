@@ -5,6 +5,7 @@
         <select-option
           :options="cycleTimeOption"
           :selected-option="cycleTimeOption[0]"
+          :timer="mainTimer"
           :callback="changeCycleTime"
         />
       </div>
@@ -24,6 +25,7 @@
           <select-option
             :options="warningTrendTypeOption"
             :selected-option="warningTrendTypeOption[0]"
+            :timer="subTimer"
             :callback="changeWarningTrendType"
           />
         </template>
@@ -96,7 +98,8 @@ import AttentionSonBox from '../realTimeIntelligence/components/attentionSonBox'
 import SelectOption from './components/selectOption'
 import DataSet from '@antv/data-set';
 import moment from 'moment';
-import mixin from './mixin'
+import mixin from './mixin';
+import {mainTimer,subTimer} from "./utils/dict";
 
 export default {
   name: "index",
@@ -113,6 +116,8 @@ export default {
       warningTrendData: [],  //风险预警趋势
       controlTrendData: [],  //风险管控趋势
       percentage: [],        //预警风险等级占比
+      mainTimer,  // 主定时器
+      subTimer,    // 副定时器
     }
   },
   methods: {
@@ -162,6 +167,13 @@ export default {
           }).transform({
             type: 'map',
             callback(row) {
+              row.percent = String(row.percent);
+              if(row.percent) {
+                row.percent = row.percent.replace(/%/g, '');
+                row.percent = Number(row.percent);
+              }else {
+                row.percent = 0;
+              }
               row.time = moment(row.time, 'YYYY-MM-DD hh:mm:ss').format();
               return row;
             }
@@ -192,6 +204,13 @@ export default {
           }).transform({
             type: 'map',
             callback(row) {
+              row.percent = String(row.percent);
+              if(row.percent) {
+                row.percent = row.percent.replace(/%/g, '');
+                row.percent = Number(row.percent);
+              }else {
+                row.percent = 0;
+              }
               row.time = moment(row.time, 'YYYY-MM-DD hh:mm:ss').format();
               return row;
             }

@@ -44,7 +44,7 @@ export default {
         container: document.getElementById(this.id),
         forceFit: true,
         height: this.height,
-        padding: [20, 20, 30, 50]
+        padding: [20, 30, 30, 70]
       });
       chart.source(dv, {
         time: {
@@ -59,6 +59,9 @@ export default {
         },
         percent: {
           alias: '占比',
+          tickCount: 5,
+          min: 0,
+          max: 100,
         }
       });
       chart.tooltip({
@@ -97,9 +100,9 @@ export default {
             fill: '#97EB86',
             fontSize: 16
           },
-          formatter: val => {
-            return val + '%';
-          }
+          formatter: function(value) {
+            return value + '%';
+          },
         },
         grid: false
       });
@@ -128,8 +131,20 @@ export default {
           color: '#fff'
         }
       });
-      chart.line().position('time*count').color('#18B6FF');
-      chart.line().position('time*percent').color('#9AEF88');
+      chart
+        .line()
+        .position('time*count')
+        .color('#18B6FF');
+      chart
+        .line()
+        .position('time*percent')
+        .color('#9AEF88')
+        .tooltip('time*percent', (time, percent) => {
+            return {
+              name: '占比',
+              value: percent + '%'
+            }
+        });
       chart.render();
       this.chart = chart;
     },

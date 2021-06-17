@@ -18,6 +18,7 @@
 </template>
 
 <script>
+import {subTimer} from "../utils/dict";
 export default {
   name: "selectOption",
   props: {
@@ -31,18 +32,42 @@ export default {
     },
     callback: {
       type: Function,
+    },
+    timer: {
+      type: Number,
+      default: subTimer
     }
   },
   data () {
     return {
-      value: this.selectedOption.value
+      value: this.selectedOption.value,
+      interval: null,  // 定时器，定时触发
+      selectedIndex: 0
     }
   },
   methods: {
     changeOption(value) {
       this.callback(value)
-    }
-  }
+    },
+    init() {
+      this.selectedIndex = 0;
+      clearInterval(this.interval);
+      this.interval = setInterval(() => {
+        // 自增取余实现循环
+        this.selectedIndex = (++this.selectedIndex) % this.options.length;
+        this.value = this.options[this.selectedIndex].value;
+        this.changeOption(this.value);
+      }, this.timer);
+    },
+  },
+  created() {
+    this.init();
+  },
+  // watch: {
+  //   options() {
+  //     this.init();
+  //   }
+  // }
 }
 </script>
 
