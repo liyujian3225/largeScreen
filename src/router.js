@@ -37,6 +37,14 @@ const router = new Router({
         title: '庙算人工智能平台',
       }
     },
+    {
+      path: '/bulletChat',
+      name: 'bulletChat',
+      component: () => import(/* webpackChunkName: "bulletChat" */ '@/views/bulletChat'),
+      meta: {
+        title: '弹幕大屏',
+      }
+    },
   ]
 });
 router.beforeEach((to, from, next) => {

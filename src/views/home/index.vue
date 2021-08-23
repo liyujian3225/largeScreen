@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <background-canvas class="backgroundCanvas"/>
     <ul>
       <li @click="drumpRouter('servicePlatform')">
         <div class="box">
@@ -22,13 +23,14 @@
           </div>
         </div>
       </li>
-<!--      <li @click="drumpRouter('24hoursOriginalManuscriptRanking')">-->
-<!--        <div class="box">-->
-<!--          <div class="info">-->
-<!--            <span>移动智能监控大屏</span>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </li>-->
+      <li @click="drumpRouter('bulletChat')">
+        <div class="box">
+          <div class="info">
+            <span>测试</span>
+          </div>
+        </div>
+      </li>
+
 <!--      <li @click="drumpRouter('originalManuscript')">-->
 <!--        <div class="box">-->
 <!--          <div class="info">-->
@@ -47,12 +49,16 @@
   </div>
 </template>
 <script>
+import backgroundCanvas from '@/components/background'
 export default {
   name: 'home',
+  components: {
+    backgroundCanvas
+  },
   methods: {
     drumpRouter(name) {
       this.$router.push(name)
-    }
+    },
   }
 }
 
@@ -68,13 +74,19 @@ export default {
   }
   div.home{
     height: 100%;
-    background: #05172E;
     position: relative;
+    .backgroundCanvas {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
     ul{
       position: absolute;
       left: 0;right: 0;
       top: 0;bottom: 0;
       margin: auto;
+      z-index: 2;
       height: 246px;
       width: 1730px;
       display: flex;
@@ -86,7 +98,7 @@ export default {
           @include backgroundStyle('../../assets/home/hot.png', 246px);
         }
         &:nth-child(2){
-          @include backgroundStyle('../../assets/home/hot.png', 246px);
+          @include backgroundStyle('../../assets/home/circle.png', 246px);
         }
         &:nth-child(3){
           @include backgroundStyle('../../assets/home/menu.png', 246px);

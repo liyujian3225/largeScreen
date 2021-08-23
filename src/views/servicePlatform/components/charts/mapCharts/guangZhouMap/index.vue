@@ -141,8 +141,6 @@ export default {
       visibility: visible !important;
       position: absolute !important;
       box-shadow: unset !important;
-      top: 0 !important;
-      left: 0 !important;
     }
     .my-tooltip-list {
       font-size: 18px;
